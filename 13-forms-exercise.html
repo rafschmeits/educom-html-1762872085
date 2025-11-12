@@ -1,0 +1,65 @@
+
+<form method="POST"
+action="https://api.dev-master.ninja/html/form">
+
+<input type="hidden" name="id" value="this is a hidden ID"
+<fieldset>
+    <legend>Course information:</legend>
+    code: <input type="text" name="code" value=""><br>
+     Do you like HTML?
+     <select name="”YouLikeHtml”">
+        <option disabled selected>-- choose one --</option>
+        <option value="Y">Yes</option>
+        <option value="N">No</option>
+     </select>
+     <br>
+
+     language area:
+    <select name="YourLanguage">
+    <option disabled selected>-- Choose one --</option>
+    <optgroup label="Francais">
+        <option value="fr-BE">Belgique</option>
+        <option value="fr-FR">France</option>
+    </optgroup>
+    <optgroup label="Nederlands">
+        <option value="nl-BE">Belgie</option>
+        <option value="nl-NL">nederland</option>
+    </optgroup>
+    <option value="en-EN">English</option>
+    </select>
+</fieldset>
+
+<br>
+Your comment: <br>
+<textarea name="comments" rows="5" cols="60"></textarea>
+<br><br>
+Your score <br>
+<input type="radio" name="score" value="10">10
+<input type="radio" name="score" value="20">20
+<input type="radio" name="score" value="30" checked>30 <input type="radio" name="score" value="40">40
+<input type="radio" name="score" value="50">50
+<br><br>
+
+Browser (datalist):<br>
+<input list="browsers" name="Browser">
+<datalist id="browsers"> 
+    <option value="Internet Explorer"> </option>
+    <option value="Firefox"> </option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+</datalist>
+<br><br>
+Food:<br>
+<input type="checkbox" name="food1" value="Spaghetti">I like Spaghetti<br>
+<input type="checkbox" name="food2" value="Bread"> I like Bread<br>
+<input type="checkbox" name="food3" value="Chicken" checked>I don't like Chicken
+<br><br>
+Your age:
+<input type="range"
+name="age"
+min="1" max="100" value="25"><br><br>
+
+<input type="submit" name="thebutton" value="Save!">
+</form>
+...
